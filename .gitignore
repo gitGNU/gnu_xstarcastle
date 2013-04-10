@@ -1,0 +1,13 @@
+configure
+Makefile.in
+Makefile
+sounds/Makefile.in
+sounds/Makefile
+config.h.in
+config.h
+aclocal.m4
+install-sh
+missing
+INSTALL
+depcomp
+autom4te.cache
