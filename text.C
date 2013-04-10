@@ -32,6 +32,7 @@ Text::Text(void)
     //fprintf(stderr, "Text::Text()\n");
     set_scale(6.0);
     set_gc(fetch_gc(GC_DULL_BLUE));
+    message = NULL;
 } // Text::Text
 
 
@@ -63,6 +64,8 @@ Text::set_position(const double xpos, const double ypos)
 
 double Text::calculate_width()
 {
+  if (!message)
+    return 0.0;
   double width = 0;
   for (int i = 0; i < length; i++) {
     if ((message[i] >= '0' && message[i] <= '9') ||
@@ -82,6 +85,8 @@ double Text::calculate_width()
 void
 Text::render(const bool ink)
 {
+  if (!message)
+    return;
     const double savex = x;
     double width;
     int offset;
