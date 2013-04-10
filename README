@@ -1,0 +1,39 @@
+xstarcastle is a fork of xsc version 1.5, by Mark B. Hanson.  xstarcastle 
+aims to be similar to the arcade version of Star Castle by Cinemastronics.
+
+The program should build on any reasonable UNIX box with a decent C++
+compiler and X libraries and SDL libraries installed.  Some portability 
+adjustments may be necessary depending on what variety of bogosities exist 
+in your C++ development environment.  
+
+You will have to run make install so that program can find the wav files.
+
+Instructions:
+=============
+
+- D turns the ship counter-clockwise
+- F turns the ship clockwise
+
+- J runs the thruster
+- K fires the laser
+
+- P toggles the pause (moving the cursor out of the window pauses the game)
+- Q quits the game
+- space starts a new game
+
+These keybindings might seem non-standard but they are similar to the
+button layout on the Star Castle arcade machines.
+
+The object is to blast a hole in the rings and destroy the enemy ship.
+The only problem is that it tracks your every move and as soon as you
+knock a hole in all three rings, and they all line up, it lets loose
+with the big nasty fireballs.  Avoid them.  Avoid the little blue
+buzzers, too.  Shoot 'em if you want, but they get you no points at all.
+
+Destroying all the segments of the outer ring causes a new solid ring
+to be generated.  You must hit each ring segment twice to destroy it.
+
+If you kill off the enemy ship, you are given another life.
+
+It all gets more difficult as the levels progress.  If you can kill the 
+enemy ship 10 times, you'll be playing on the very hardest level.

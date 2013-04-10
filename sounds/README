@@ -1,0 +1,18 @@
+The wav files in this directory come from two sources: 
+alienblaster: http://www.schwardtnet.de/alienblaster/
+wordwarvi: http://sourceforge.net/projects/wordwarvi/
+
+explosionBoss.wav comes from the alienblaster project.
+The file is licensed under GNU General Public License version 2 or later.
+
+The following files come from the wordwarvi project:
+bodyslam.wav
+bombexplosion.wav
+flak_gun_sound.wav
+radar_fail.wav
+radar_ready.wav
+tesla_tower.wav
+
+These sounds are licensed under Creative Commons Attribution Share-Alike 3.0 Unported.
+Copyright (C) 2008 Stephen M. Cameron
+

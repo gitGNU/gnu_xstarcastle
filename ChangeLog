@@ -1,0 +1,61 @@
+
+1.6
+added cinematronics font.
+removed spinning starfield.
+added original starfield.
+changed buzzers to blue.
+buzzers now move around the rings randomly when the ship is dead.
+added king animation.
+changed dead grey outer ring to black.
+now randomly switching direction of rings on new castles.
+added explosions when lasers hit buzzers and ring segments.
+removed the castle explosion animation where the rings grow larger.
+added castle explosion animation consisting of an ever-growing starfield.
+added castle explosion animation consisting of spikey lines.
+removed the stats window.  now displaying stats on the game window.
+added attract state.
+added high score state, and saving the high score.
+added show player score state.
+added press start state.
+added random placement of buzzers for attract state.
+hitting fireballs with lasers makes the lasers fizzle out.
+removed rcs id stuff.
+added --help option
+added ship thrusting animation
+changed fireball from green to blue.
+changed bounce effect so that the ship turns around 180 degrees when hitting
+the castle head-on.
+changed king colour to yellow.
+added --greyscale option.
+changed lasers to go not go faster because the ship is going faster.
+buzzers now turn around gradually rather than instantly.
+added more stat keeping, how many buzzers hit, ring segments, and so on.
+
+1.5:
+    * fixes for gcc-3.2
+    * better physics for the ship when using non-default framerates
+    * handle X events more efficiently
+    * work around problem of autoconf random tests failing on linux
+
+1.4:
+    * correctness fixes
+    * cosmetic fixes
+    * work around a bug in RedHat's gcc-2.96
+    * some profiling and optimization
+
+1.3:
+    * initial public release
+    * better portability
+
+1.2:
+    * internal snapshot
+    * better C++ style
+
+1.1:
+    * internal snapshot
+    * gameplay enhancements
+
+1.0:
+    * internal snapshot
+    * initial implementation
+
