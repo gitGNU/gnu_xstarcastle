@@ -33,7 +33,7 @@ Stats::Stats(void)
 {
     //fprintf(stderr, "Stats::Stats()\n");
     reset();
-    last_score = ULONG_MAX;	// ensure we get displayed first time
+    last_score = UINT_MAX;	// ensure we get displayed first time
 
     set_window(game_window);
     text_primary.set_window(game_window);
