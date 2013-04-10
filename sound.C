@@ -47,6 +47,8 @@ void play(int snd)
 
 void buzzer_sound(bool on)
 {
+  if (args.quiet)
+    return;
   buzzer_sound_on = on;
   if (on)
     {
@@ -61,6 +63,8 @@ void buzzer_sound(bool on)
 
 void repeat_music()
 {
+  if (args.quiet)
+    return;
   Mix_FadeInMusic(buzzer, 1, 0);
 }
 
@@ -90,6 +94,8 @@ void sound_init()
 
 void sound_pause(bool pause)
 {
+  if (args.quiet)
+    return;
   if (pause)
     Mix_PauseMusic();
   else
