@@ -26,7 +26,7 @@ VERSION = 1.6
 #AM_CXXFLAGS = -g -DDEBUG -Wall -W -Wshadow -Wcast-qual -Wcast-align \
 #-Wconversion -Winline -Werror
 #AM_CXXFLAGS = -std=c++11
-AM_CXXFLAGS=${SDL_CFLAGS} -Wall -Werror
+AM_CXXFLAGS=${SDL_CFLAGS} -Wall
 INCLUDES=-DXSTARCASTLE_DATADIR='"$(XSTARCASTLE_DATADIR)"'
 
 bin_PROGRAMS = xstarcastle
