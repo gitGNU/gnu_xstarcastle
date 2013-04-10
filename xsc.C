@@ -520,6 +520,9 @@ snooze(void)
 } // namespace
 
 
+static Bool wait_for_window( Display *d, XEvent *e, XPointer arg ) {
+      return (e->type == MapNotify) && (e->xmap.window == (Window) arg);
+}
 
 int
 main(const int argc, char **const argv)
@@ -625,6 +628,7 @@ main(const int argc, char **const argv)
 
 
   XMapWindow(display, game_window);
+  XIfEvent(display, &event, wait_for_window, (XPointer) game_window);
   XNextEvent(display, &event);
   XSync(display, True);
 
